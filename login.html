@@ -7,8 +7,8 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&display=swap');
-        body { font-family: 'Outfit', sans-serif; background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=2000'); background-size: cover; }
-        .glass-card { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.5); }
+        body { font-family: 'Outfit', sans-serif; background-color: #1a1a1a; background-size: cover; }
+        .glass-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.5); }
     </style>
 </head>
 <body class="h-screen flex items-center justify-center p-6 relative">
@@ -17,8 +17,8 @@
         <div class="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-2xl flex items-center justify-center shadow-lg mx-auto mb-6 transform rotate-3"><i class="ph-bold ph-shield-check text-white text-3xl"></i></div>
         <h2 class="text-3xl font-extrabold text-gray-900 mb-2">Welcome Back</h2>
         <p class="text-sm font-medium text-gray-500 mb-8">Login to command center</p>
-        {% if error %}<div class="bg-red-50 text-red-600 px-4 py-3 rounded-xl text-sm font-bold mb-6"><i class="ph-bold ph-warning-circle"></i> {{ error }}</div>{% endif %}
-        <form action="/login" method="POST" class="space-y-4">
+        
+        <form action="./admin_dashboard1.html" method="GET" class="space-y-4">
             <input type="text" name="username" placeholder="Admin ID" required class="w-full bg-white/70 border border-gray-200 rounded-2xl px-5 py-4 text-sm font-bold focus:ring-2 focus:ring-green-500">
             <input type="password" name="password" placeholder="Password" required class="w-full bg-white/70 border border-gray-200 rounded-2xl px-5 py-4 text-sm font-bold focus:ring-2 focus:ring-green-500">
             <button type="submit" class="w-full bg-gray-900 text-white py-4 rounded-2xl font-bold shadow-xl hover:bg-green-600 transition-all">Secure Login</button>
